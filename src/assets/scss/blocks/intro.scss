@@ -1,0 +1,106 @@
+.intro{
+    background-color: $bg-blue;
+    padding-top: 280px;
+    padding-bottom: 320px;
+    @include bp(800px){
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+    .intro__container{
+        display: flex;
+        @include bp(800px){
+            flex-direction: column-reverse;
+        }
+        .intro__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            width: 50%;
+            color: $font-white;
+            @include bp(800px){
+                width: 100%;
+            }
+            .intro__header{
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 45px;
+                margin-bottom: 30px;
+                padding-right: 100px;
+                @include bp(800px){
+                    font-size: 24px;
+                    padding: 0;
+                    margin-bottom: 15px;
+                    text-align: center;
+                }
+            }
+            .intro__text{
+                font-size: 18px;
+                line-height: 27px;
+                margin-bottom: 25px;
+                padding: 0 18px;
+                opacity: 0.9;
+                @include bp(800px){
+                    
+                    padding: 0;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+            }
+            .intro__footer{
+                display: block;
+                padding-left: 35px;
+                @include bp(800px){
+                    padding: 0;
+                    margin: 0 auto;
+                }
+                .intro__button{
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $font-black;
+                    background-color: $font-white;
+                    border: none;
+                    border-radius: 20px;
+                    
+                    padding: 13px 25px;
+                    transition: linear 0.1s;
+                    
+                    &:hover{
+                        transform: scale(1.03);
+                    }
+                    &:active{
+                        transform: scale(1);
+                    }
+                }
+            }
+            
+        }
+
+        .intro__picture{
+            width: 50%;
+            
+            padding: 0 75px;
+            display: flex;
+            align-items: center;
+            @include bp(1000px){
+                overflow: hidden;
+                padding: 15px;
+            }
+            @include bp(800px){
+                width: 100%;
+                justify-content: center;
+                margin-bottom: 50px;
+            }
+            .intro__img{
+                height: 360px;
+                object-fit: cover;
+                @include bp(800px){
+                    
+                    height: 200px;
+                }
+            }
+            
+        }
+
+    }
+}

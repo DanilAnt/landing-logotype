@@ -1,0 +1,9 @@
+.container{
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;
+    height: 100%;
+    @include bp(800px){
+        padding: 0 10px;
+    }
+}

@@ -1,0 +1,25 @@
+@import "vendor/reset.scss";
+@import "_vars.scss";
+@import "mixin.scss";
+body {
+    background-color: white;
+    
+    
+    
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 18px;
+    color: $font-black;
+    overflow-x: hidden;
+
+
+}
+@import "blocks/container.scss";
+@import "blocks/header.scss";
+@import "blocks/burger.scss";
+@import "blocks/nav.scss";
+@import "blocks/intro.scss";
+@import "blocks/advantages.scss";
+@import "blocks/table.scss";
+@import "blocks/about.scss";
+@import "blocks/map.scss";

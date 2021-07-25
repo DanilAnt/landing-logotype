@@ -1,0 +1,71 @@
+.map{
+    position: relative;
+    .map__contacts{
+        display: flex;
+        flex-direction: column;
+        top: 50%;
+        left: 25%;
+        transform: translateY(-50%) translateX(-50%);
+        background-color:  rgba($color: $bg-white, $alpha: .85);
+        padding: 40px 210px 40px 40px;
+        position: absolute;
+        color: $font-black;
+        @include bp(1000px){
+            transform: translateY(-50%) translateX(0);
+            padding: 20px 80px 20px 20px;
+            left: 5%;
+        }
+        @include bp(760px){
+            padding: 10px 40px 10px 10px;
+        }
+        @include bp(550px){
+            top: auto;
+            left: 50%;
+            bottom: 50px;
+            transform: translateY(0%) translateX(-50%);
+
+        }
+        .map__header{
+            font-size: 27px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            @include bp(760px){
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+        }
+        .map__text{
+            font-size: 18px;
+            font-weight: 400;
+            padding-left: 5px;
+            margin-bottom: 30px;
+            white-space: nowrap;
+            &--bold{
+                font-weight: 700;
+            }
+            @include bp(760px){
+                font-size: 14px;
+                padding-left: 3px;
+                margin-bottom: 13px;
+            }
+        }
+        .map__link{
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    .map__input{
+        height: 720px;
+        @include bp(760px){
+            height: 500px;
+        }
+        @media (max-height: 800px){
+            height: 500px;
+        }
+        @media (max-height: 550px){
+            height: 300px;
+        }
+    }
+}
